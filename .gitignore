@@ -1,0 +1,14 @@
+# Arquivos e pastas a serem ignorados
+.vscode/        # Configurações do Visual Studio Code
+*.log           # Arquivos de log (se aplicável)
+*.exe           # Executáveis (se aplicável)
+*.exe~          # Executáveis temporários (se aplicável)
+*.swp           # Arquivos de troca (se aplicável)
+*.swo           # Arquivos de troca (se aplicável)
+
+# Arquivos binários e de compilação
+*.out           # Binários de compilação (se aplicável)
+*.dll           # Bibliotecas dinâmicas (se aplicável)
+
+# Dependências
+/go.sum         # Arquivo de controle de versões Go (deixar de fora se você está controlando versões)
