@@ -1,5 +1,5 @@
 # Arquivos e pastas a serem ignorados
-.vscode/        # Configurações do Visual Studio Code
+.vscode     # Configurações do Visual Studio Code
 *.log           # Arquivos de log (se aplicável)
 *.exe           # Executáveis (se aplicável)
 *.exe~          # Executáveis temporários (se aplicável)
@@ -11,4 +11,5 @@
 *.dll           # Bibliotecas dinâmicas (se aplicável)
 
 # Dependências
-/go.sum         # Arquivo de controle de versões Go (deixar de fora se você está controlando versões)
+go.sum
+.vscode/launch.json
