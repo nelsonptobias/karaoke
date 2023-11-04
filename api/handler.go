@@ -23,6 +23,12 @@ func postCantores(c *gin.Context) {
 		return
 	}
 
+	// Verifique se os campos necessários não são vazios
+	if newCantor.Nome == "" || newCantor.Mesa == "" || newCantor.CodigoMusica == "" {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Todos os campos são obrigatórios"})
+		return
+	}
+
 	AddCantor(newCantor)
 	c.IndentedJSON(http.StatusCreated, newCantor)
 }
