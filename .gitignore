@@ -11,5 +11,4 @@
 *.dll           # Bibliotecas dinâmicas (se aplicável)
 
 # Dependências
-go.sum
 .vscode/launch.json
