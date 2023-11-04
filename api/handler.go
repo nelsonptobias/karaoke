@@ -47,7 +47,7 @@ func removeItem(c *gin.Context) {
 	// Percorre o slice de itens para encontrar e remover o item com o ID correspondente
 	indexToRemove := -1
 	for i, item := range cantores {
-		if item.Nome == id {
+		if strings.TrimSpace(item.Nome) == id {
 			indexToRemove = i
 			break
 		}
