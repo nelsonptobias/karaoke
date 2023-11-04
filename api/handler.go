@@ -3,6 +3,7 @@ package api
 import (
 	"net/http"
 	"operations/models"
+	"strings"
 
 	"github.com/gin-gonic/gin"
 )
@@ -41,7 +42,7 @@ func AddCantor(newCantor models.Cantor) {
 
 func removeItem(c *gin.Context) {
 	// Obter o ID do item a ser removido a partir dos parâmetros da URL
-	id := c.Param("nome")
+	id := strings.TrimSpace(c.Param("nome"))
 
 	// Percorre o slice de itens para encontrar e remover o item com o ID correspondente
 	indexToRemove := -1
